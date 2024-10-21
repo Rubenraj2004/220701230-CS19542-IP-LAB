@@ -1,0 +1,54 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Content section styling */
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+.content h1 {
+    color: #333;
+    font-size: 36px;
+}
+
+.content p {
+    color: #666;
+    font-size: 18px;
+}

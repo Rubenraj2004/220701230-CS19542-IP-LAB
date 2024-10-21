@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AddForm.html">Add Book</a></li>
+            <li><a href="UpdateForm.html">Update Book</a></li>
+            <li><a href="Reservation.html">Reservation</a></li>
+            <li><a href="ViewBook.html">View Book</a></li>
+            <li><a href="FineCal.html">Fine Calculation</a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+
+    
+        <h1>Fine Calculation for Delayed Submission</h1>
+        <form action="calculateFine.php" method="POST">
+            <label for="submission_date">Submission Date:</label>
+            <input type="date" id="submission_date" name="submission_date" required><br><br>
+
+            <label for="return_date">Return Date:</label>
+            <input type="date" id="return_date" name="return_date" required><br><br>
+
+            <button type="submit" class="submit-btn">Calculate Fine</button>
+        </form>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Calculation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #f8f9fa; /* Light background color */
+        }
+        nav {
+            background-color: #343a40; /* Dark background for navbar */
+        }
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav-list li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav-list li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav-list li a:hover {
+            text-decoration: underline;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .submit-btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Library Management System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AddForm.html">Add Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="UpdateForm.html">Update Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="Reservation.html">Reservation</a></li>
+                <li class="nav-item"><a class="nav-link" href="ViewBook.html">View Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="FineCal.html">Fine Calculation</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Info</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h1>Fine Calculation for Delayed Submission</h1>
+        <form action="calculateFine.php" method="POST">
+            <div class="form-group">
+                <label for="submission_date">Submission Date:</label>
+                <input type="date" id="submission_date" name="submission_date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="return_date">Return Date:</label>
+                <input type="date" id="return_date" name="return_date" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Calculate Fine</button>
+        </form>
+    </div>
+</body>
+</html>

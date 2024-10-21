@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Book Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+        }
+        nav {
+            background-color: #343a40; /* Dark background for navbar */
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .submit-btn {
+            width: 100%;
+        }
+        .table-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Library Management System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="AddForm.html">Add Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="UpdateForm.html">Update Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="Reservation.html">Reservation</a></li>
+                <li class="nav-item"><a class="nav-link" href="ViewBook.html">View Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="FineCal.html">Fine Calculation</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Info</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h1>View Book Details</h1>
+        <form action="viewBook.php" method="POST">
+            <div class="form-group">
+                <label for="book_id">Enter Book ID:</label>
+                <input type="number" id="book_id" name="book_id" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">View Book</button>
+        </form>
+
+        <h2 class="mt-4">View Reserved Book</h2>
+        <form action="viewReservedBook.php" method="POST">
+            <div class="form-group">
+                <label for="reservation_id">Enter Reservation ID:</label>
+                <input type="number" id="reservation_id" name="reservation_id" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">View Reserved Book</button>
+        </form>
+    </div>
+</body>
+</html>
